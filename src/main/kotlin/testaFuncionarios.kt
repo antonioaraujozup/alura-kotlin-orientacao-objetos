@@ -1,5 +1,17 @@
 fun testaFuncionarios() {
-    // Cria um Funcionário
+    // Cria um Auxiliar
+    val antonio = Auxiliar(
+        nome = "Antonio",
+        cpf = "111.111.111-11",
+        salario = 1000.0
+    )
+
+    println("Nome: ${antonio.nome}")
+    println("CPF: ${antonio.cpf}")
+    println("Salário: ${antonio.salario}")
+    println("Bonificação: ${antonio.bonificacao}")
+
+    // Cria um Analista
     val eloy = Analista(
         nome = "Eloy",
         cpf = "111.111.111-11",
