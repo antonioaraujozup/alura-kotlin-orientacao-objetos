@@ -50,4 +50,22 @@ fun main() {
     println("Salário: ${eloy.salario}")
     println("Bonificação: ${eloy.bonificacao()}")
 
+    // Cria um Gerente
+    val mai = Gerente(
+        nome = "Mai",
+        cpf = "123.456.789-00",
+        salario = 2000.0,
+        senha = 1234
+    )
+
+    println("Nome: ${mai.nome}")
+    println("CPF: ${mai.cpf}")
+    println("Salário: ${mai.salario}")
+    println("Bonificação: ${mai.bonificacao()}")
+
+    when(mai.autentica(1234)) {
+        true -> println("Gerente autenticado com sucesso")
+        false -> println("Falha na autenticação")
+    }
+
 }
