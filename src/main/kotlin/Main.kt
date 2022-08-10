@@ -1,7 +1,7 @@
 fun main() {
 
-    println("Bem-vindo ao Bytebank")
-
+//    // Testa acesso ao Sistema Interno
+//    testeSistemaInterno()
 
 //    // Construtores, propriedades e métodos/comportamentos
 //    testaComportamentos()
@@ -40,10 +40,11 @@ fun main() {
 //    testaDoWhile()
 
 //    // Testa Funcionários
-    testaFuncionarios()
+//    testaFuncionarios()
 
 //    // Testa Contas Poupança e Corrente
 //    testaContasDiferentes()
 
 
 }
+
