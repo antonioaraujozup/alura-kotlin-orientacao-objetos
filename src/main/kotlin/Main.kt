@@ -39,8 +39,8 @@ fun main() {
 //    // do-while
 //    testaDoWhile()
 
-    // Testa Funcionários
-    testaFuncionarios()
+//    // Testa Funcionários
+//    testaFuncionarios()
 
 //    // Testa Contas Poupança e Corrente
 //    testaContasDiferentes()

@@ -1,14 +1,14 @@
 fun testaComportamentos() {
     // Usa construtor primário e labels (argumento nomeados)
-    val contaEloy = Conta(titular = "Eloy", numero = 1000)
+    val contaEloy = ContaPoupanca(titular = "Eloy", numero = 1000)
     contaEloy.deposita(200.0)
 
     // Usa construtor primário e labels com ordem trocada
-    val contaMai = Conta(numero = 1001, titular = "Mai")
+    val contaMai = ContaCorrente(numero = 1001, titular = "Mai")
     contaMai.deposita(300.0)
 
     // Usa construtor secundário sem labels
-    val contaRodolfo = Conta("Rodolfo", 1010, 0.0)
+    val contaRodolfo = ContaPoupanca("Rodolfo", 1010)
 
     println(contaEloy.titular)
     println(contaEloy.numero)
