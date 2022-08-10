@@ -4,8 +4,8 @@ abstract class ContaTransferivel(
 ): Conta(
     titular = titular,
     numero = numero
-), Transferivel {
-    override fun transfere(valor: Double, destino: ContaTransferivel): Boolean {
+){
+    fun transfere(valor: Double, destino: ContaTransferivel): Boolean {
         if (this.saldo >= valor) {
             this.saldo -= valor
             destino.saldo += valor
