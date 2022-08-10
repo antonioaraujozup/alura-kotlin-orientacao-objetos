@@ -1,7 +1,7 @@
 class SistemaInterno {
-    fun entra(funcionarioAdmin: FuncionarioAdmin, senha: Int) {
-        if (funcionarioAdmin.autentica(senha)) {
-            println("Bem-vindo ao Bytebank, ${funcionarioAdmin.nome}")
+    fun entra(autenticavel: Autenticavel, senha: Int) {
+        if (autenticavel.autentica(senha)) {
+            println("Bem-vindo ao Bytebank")
         } else {
             println("Falha ao autenticar")
         }

@@ -14,8 +14,15 @@ fun testeSistemaInterno() {
         plr = 5000.0
     )
 
+    val cliente = Cliente(
+        nome = "Rodolfo",
+        cpf = "000.000.000-00",
+        senha = 789
+    )
+
     val sistemaInterno = SistemaInterno()
 
-    sistemaInterno.entra(funcionarioAdmin = gerente, senha = 123)
-    sistemaInterno.entra(funcionarioAdmin = diretora, senha = 4567)
+    sistemaInterno.entra(autenticavel = gerente, senha = 123)
+    sistemaInterno.entra(autenticavel = diretora, senha = 456)
+    sistemaInterno.entra(autenticavel = cliente, senha = 789)
 }

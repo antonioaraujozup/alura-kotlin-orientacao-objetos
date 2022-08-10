@@ -1,7 +1,7 @@
 fun main() {
 
 //    // Testa acesso ao Sistema Interno
-//    testeSistemaInterno()
+    testeSistemaInterno()
 
 //    // Construtores, propriedades e métodos/comportamentos
 //    testaComportamentos()
