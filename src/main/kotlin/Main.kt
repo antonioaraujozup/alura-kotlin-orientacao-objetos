@@ -40,7 +40,7 @@ fun main() {
 //    testaDoWhile()
 
 //    // Testa Funcionários
-//    testaFuncionarios()
+    testaFuncionarios()
 
 //    // Testa Contas Poupança e Corrente
 //    testaContasDiferentes()

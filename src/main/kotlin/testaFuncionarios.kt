@@ -76,6 +76,7 @@ fun testaFuncionarios() {
     // Calculando total de bonificação dos funcionários
     val calculadoraBonificacao = CalculadoraBonificacao()
 
+    calculadoraBonificacao.registra(antonio)
     calculadoraBonificacao.registra(eloy)
     calculadoraBonificacao.registra(mai)
     calculadoraBonificacao.registra(rodolfo)
