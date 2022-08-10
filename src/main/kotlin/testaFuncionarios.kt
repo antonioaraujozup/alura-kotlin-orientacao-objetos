@@ -1,6 +1,6 @@
 fun testaFuncionarios() {
     // Cria um Funcionário
-    val eloy = Funcionario(
+    val eloy = Analista(
         nome = "Eloy",
         cpf = "111.111.111-11",
         salario = 1000.0
