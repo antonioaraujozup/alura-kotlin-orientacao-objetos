@@ -7,5 +7,5 @@ class Analista(
     cpf = cpf,
     salario = salario
 ) {
-    override val bonificacao: Double = super.bonificacao + this.salario * 0.1
+    override val bonificacao: Double = this.salario * 0.1
 }
