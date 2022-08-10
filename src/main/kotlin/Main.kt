@@ -48,7 +48,7 @@ fun main() {
     println("Nome: ${eloy.nome}")
     println("CPF: ${eloy.cpf}")
     println("Salário: ${eloy.salario}")
-    println("Bonificação: ${eloy.bonificacao()}")
+    println("Bonificação: ${eloy.bonificacao}")
 
     // Cria um Gerente
     val mai = Gerente(
@@ -61,10 +61,30 @@ fun main() {
     println("Nome: ${mai.nome}")
     println("CPF: ${mai.cpf}")
     println("Salário: ${mai.salario}")
-    println("Bonificação: ${mai.bonificacao()}")
+    println("Bonificação: ${mai.bonificacao}")
 
     when(mai.autentica(1234)) {
         true -> println("Gerente autenticado com sucesso")
+        false -> println("Falha na autenticação")
+    }
+
+    // Cria um Diretor
+    val rodolfo = Diretor(
+        nome = "Rodolfo",
+        cpf = "000.000.000-00",
+        salario = 5000.0,
+        senha = 4321,
+        plr = 1000.0
+    )
+
+    println("Nome: ${rodolfo.nome}")
+    println("CPF: ${rodolfo.cpf}")
+    println("Salário: ${rodolfo.salario}")
+    println("Bonificação: ${rodolfo.bonificacao}")
+    println("PLR: ${rodolfo.plr}")
+
+    when(rodolfo.autentica(4321)) {
+        true -> println("Diretor autenticado com sucesso")
         false -> println("Falha na autenticação")
     }
 
