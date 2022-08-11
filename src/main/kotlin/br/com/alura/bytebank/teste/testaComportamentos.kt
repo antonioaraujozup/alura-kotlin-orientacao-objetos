@@ -3,6 +3,7 @@ package br.com.alura.bytebank.teste
 import br.com.alura.bytebank.modelo.Cliente
 import br.com.alura.bytebank.modelo.ContaCorrente
 import br.com.alura.bytebank.modelo.ContaPoupanca
+import br.com.alura.bytebank.modelo.Endereco
 
 fun testaComportamentos() {
     // Usa construtor primário e labels (argumento nomeados)
@@ -16,13 +17,18 @@ fun testaComportamentos() {
     contaMai.deposita(300.0)
 
     // Usa construtor secundário sem labels
-    val rodolfo = Cliente(nome = "Rodolfo", cpf = "222.222.222-22", senha = 3)
+    val rodolfo = Cliente(
+        nome = "Rodolfo",
+        cpf = "222.222.222-22",
+        senha = 3,
+        endereco = Endereco(logradouro = "Avenida 33")
+    )
     val contaRodolfo = ContaPoupanca(rodolfo, 1010)
     contaRodolfo.deposita(500.0)
 
     println(contaEloy.titular.nome)
-    contaEloy.titular.endereco.logradouro = "Avenida 1"
     println(contaEloy.titular.endereco.logradouro)
+    println(contaEloy.titular.endereco.numero)
     println(contaEloy.numero)
     println(contaEloy.saldo)
 
@@ -31,14 +37,15 @@ fun testaComportamentos() {
     println(contaMai.titular.nome)
     contaMai.titular.endereco.logradouro = "Avenida 2"
     println(contaMai.titular.endereco.logradouro)
+    println(contaMai.titular.endereco.numero)
     println(contaMai.numero)
     println(contaMai.saldo)
 
     println()
 
     println(contaRodolfo.titular.nome)
-    contaRodolfo.titular.endereco.logradouro = "Avenida 3"
     println(contaRodolfo.titular.endereco.logradouro)
+    println(contaRodolfo.titular.endereco.numero)
     println(contaRodolfo.numero)
     println(contaRodolfo.saldo)
 
