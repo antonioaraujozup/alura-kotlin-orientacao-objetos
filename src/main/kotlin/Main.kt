@@ -1,3 +1,5 @@
+import java.lang.String as StringJava
+
 fun main() {
 
 //    // Testa acesso ao Sistema Interno
@@ -59,6 +61,12 @@ fun main() {
 //    val classeConstrutorSecundario = modelo.ClasseConstrutorSecundario(nome = "Mai", idade = 32)
 //    println(classeConstrutorSecundario.nome)
 //    println(classeConstrutorSecundario.idade)
+
+    // Testando strings do Kotlin e do Java (uso do alias para evitar ambiguidade e uso do FQN)
+    val stringDaLinguagemKotlin: String = "String do Kotlin"
+    val stringDaLinguagemJava: StringJava = StringJava("String do Java")
+    println(stringDaLinguagemKotlin)
+    println(stringDaLinguagemJava)
 
 
 
