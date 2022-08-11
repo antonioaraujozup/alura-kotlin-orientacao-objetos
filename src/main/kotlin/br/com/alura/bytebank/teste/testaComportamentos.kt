@@ -21,18 +21,24 @@ fun testaComportamentos() {
     contaRodolfo.deposita(500.0)
 
     println(contaEloy.titular.nome)
+    contaEloy.titular.endereco.logradouro = "Avenida 1"
+    println(contaEloy.titular.endereco.logradouro)
     println(contaEloy.numero)
     println(contaEloy.saldo)
 
     println()
 
     println(contaMai.titular.nome)
+    contaMai.titular.endereco.logradouro = "Avenida 2"
+    println(contaMai.titular.endereco.logradouro)
     println(contaMai.numero)
     println(contaMai.saldo)
 
     println()
 
     println(contaRodolfo.titular.nome)
+    contaRodolfo.titular.endereco.logradouro = "Avenida 3"
+    println(contaRodolfo.titular.endereco.logradouro)
     println(contaRodolfo.numero)
     println(contaRodolfo.saldo)
 
