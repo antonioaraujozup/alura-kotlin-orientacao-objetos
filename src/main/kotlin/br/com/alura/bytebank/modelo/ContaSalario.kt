@@ -4,7 +4,7 @@ import br.com.alura.bytebank.modelo.Conta
 
 class ContaSalario : Conta {
 
-    constructor(titular: String, numero: Int): super(titular = titular, numero = numero)
+    constructor(titular: Cliente, numero: Int): super(titular = titular, numero = numero)
 
     override fun saca(valor: Double) {
         if (this.saldo >= valor) {

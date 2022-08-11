@@ -1,29 +1,40 @@
 package br.com.alura.bytebank.teste
 
+import br.com.alura.bytebank.modelo.Cliente
 import br.com.alura.bytebank.modelo.ContaCorrente
 import br.com.alura.bytebank.modelo.ContaPoupanca
 
 fun testaComportamentos() {
     // Usa construtor primário e labels (argumento nomeados)
-    val contaEloy = ContaPoupanca(titular = "Eloy", numero = 1000)
+    val eloy = Cliente(nome = "Eloy", cpf = "123.456.789-00", senha = 1)
+    val contaEloy = ContaPoupanca(titular = eloy, numero = 1000)
     contaEloy.deposita(200.0)
 
     // Usa construtor primário e labels com ordem trocada
-    val contaMai = ContaCorrente(numero = 1001, titular = "Mai")
+    val mai = Cliente(nome = "Mai", cpf = "111.111.111-11", senha = 2)
+    val contaMai = ContaCorrente(numero = 1001, titular = mai)
     contaMai.deposita(300.0)
 
     // Usa construtor secundário sem labels
-    val contaRodolfo = ContaPoupanca("Rodolfo", 1010)
+    val rodolfo = Cliente(nome = "Rodolfo", cpf = "222.222.222-22", senha = 3)
+    val contaRodolfo = ContaPoupanca(rodolfo, 1010)
+    contaRodolfo.deposita(500.0)
 
-    println(contaEloy.titular)
+    println(contaEloy.titular.nome)
     println(contaEloy.numero)
     println(contaEloy.saldo)
 
     println()
 
-    println(contaMai.titular)
+    println(contaMai.titular.nome)
     println(contaMai.numero)
     println(contaMai.saldo)
+
+    println()
+
+    println(contaRodolfo.titular.nome)
+    println(contaRodolfo.numero)
+    println(contaRodolfo.saldo)
 
     println()
 
