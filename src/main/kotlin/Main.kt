@@ -46,14 +46,18 @@ fun main() {
 //    testaFuncionarios()
 //
 //    // Testa Contas Poupança e Corrente
-    testaContasDiferentes()
-    println("Total de contas: $total")
+//    testaContasDiferentes()
+//    println("Total de contas: $total")
 //
 //    // Testa classe com construtor default
 //    testaClassesComDiferentesConstrutores()
 //
 //    // Testando strings do Kotlin e do Java (uso do alias para evitar ambiguidade e uso do FQN)
 //    testaAliasImport()
+
+    // Testando Object Expression (objeto anônimo)
+    //testaObjectExpression()
+
 
 }
 
