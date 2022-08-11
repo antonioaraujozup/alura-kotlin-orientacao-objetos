@@ -1,3 +1,8 @@
+import modelo.Cliente
+import modelo.Diretor
+import modelo.Gerente
+import modelo.SistemaInterno
+
 fun testeSistemaInterno() {
     val gerente = Gerente(
         nome = "Eloy",

@@ -1,11 +1,15 @@
+import modelo.ContaCorrente
+import modelo.ContaPoupanca
+import modelo.ContaSalario
+
 fun testaContasDiferentes() {
-    // Cria Conta Poupança
+    // Cria modelo.Conta Poupança
     val contaPoupanca = ContaPoupanca(titular = "Eloy", numero = 1000)
 
-    // Cria Conta Corrente
+    // Cria modelo.Conta Corrente
     val contaCorrente = ContaCorrente(titular = "Mai", numero = 1001)
 
-    // Cria Conta Salario
+    // Cria modelo.Conta Salario
     val contaSalario = ContaSalario(titular = "Rodolfo", numero = 1002)
 
     // Realiza depósito inicial nas contas criadas

@@ -1,5 +1,7 @@
+import modelo.*
+
 fun testaFuncionarios() {
-    // Cria um Auxiliar
+    // Cria um modelo.Auxiliar
     val antonio = Auxiliar(
         nome = "Antonio",
         cpf = "111.111.111-11",
@@ -11,7 +13,7 @@ fun testaFuncionarios() {
     println("Salário: ${antonio.salario}")
     println("Bonificação: ${antonio.bonificacao}")
 
-    // Cria um Analista
+    // Cria um modelo.Analista
     val eloy = Analista(
         nome = "Eloy",
         cpf = "111.111.111-11",
@@ -23,7 +25,7 @@ fun testaFuncionarios() {
     println("Salário: ${eloy.salario}")
     println("Bonificação: ${eloy.bonificacao}")
 
-    // Cria um Analista
+    // Cria um modelo.Analista
     val joao = Analista(
         nome = "João",
         cpf = "123.123.123-11",
@@ -35,7 +37,7 @@ fun testaFuncionarios() {
     println("Salário: ${joao.salario}")
     println("Bonificação: ${joao.bonificacao}")
 
-    // Cria um Gerente
+    // Cria um modelo.Gerente
     val mai = Gerente(
         nome = "Mai",
         cpf = "123.456.789-00",
@@ -49,11 +51,11 @@ fun testaFuncionarios() {
     println("Bonificação: ${mai.bonificacao}")
 
     when (mai.autentica(senha = 1234)) {
-        true -> println("Gerente autenticado com sucesso")
+        true -> println("modelo.Gerente autenticado com sucesso")
         false -> println("Falha na autenticação")
     }
 
-    // Cria um Diretor
+    // Cria um modelo.Diretor
     val rodolfo = Diretor(
         nome = "Rodolfo",
         cpf = "000.000.000-00",
@@ -69,7 +71,7 @@ fun testaFuncionarios() {
     println("PLR: ${rodolfo.plr}")
 
     when (rodolfo.autentica(senha = 4321)) {
-        true -> println("Diretor autenticado com sucesso")
+        true -> println("modelo.Diretor autenticado com sucesso")
         false -> println("Falha na autenticação")
     }
 

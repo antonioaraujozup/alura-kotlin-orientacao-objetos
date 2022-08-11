@@ -1,3 +1,6 @@
+import modelo.ContaCorrente
+import modelo.ContaPoupanca
+
 fun testaComportamentos() {
     // Usa construtor primário e labels (argumento nomeados)
     val contaEloy = ContaPoupanca(titular = "Eloy", numero = 1000)

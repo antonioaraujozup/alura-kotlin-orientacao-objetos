@@ -1,3 +1,6 @@
+import modelo.ContaCorrente
+import modelo.ContaPoupanca
+
 fun testaCopiaEReferencia() {
 
     var numeroA = 10

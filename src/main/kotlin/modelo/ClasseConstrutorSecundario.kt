@@ -1,3 +1,5 @@
+package modelo
+
 class ClasseConstrutorSecundario {
     val nome: String
     val idade: Int
