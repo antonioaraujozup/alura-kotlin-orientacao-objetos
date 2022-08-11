@@ -1,14 +1,20 @@
 package br.com.alura.bytebank.teste
 
+import br.com.alura.bytebank.modelo.Autenticavel
+import br.com.alura.bytebank.modelo.SistemaInterno
+
 fun testaObjectExpression() {
-    var eloy = object {
+    val eloy = object: Autenticavel {
         val titular: String = "Eloy"
         val cpf: String = "123.456.789-00"
         val senha: Int = 1000
 
-        fun autentica(senha: Int) = this.senha == senha
+        override fun autentica(senha: Int) = this.senha == senha
     }
 
-    println("Autentica com sucesso: ${eloy.autentica(senha = 1000)}")
-    println("Falha na autenticação: ${eloy.autentica(senha = 1001)}")
+    val sistemaInterno = SistemaInterno()
+
+    sistemaInterno.entra(autenticavel = eloy, senha = 1000)
+    sistemaInterno.entra(autenticavel = eloy, senha = 1001)
+
 }

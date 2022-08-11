@@ -56,7 +56,7 @@ fun main() {
 //    testaAliasImport()
 
     // Testando Object Expression (objeto anônimo)
-    //testaObjectExpression()
+    testaObjectExpression()
 
 
 }
