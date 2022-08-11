@@ -1,14 +1,16 @@
 package br.com.alura.bytebank.modelo
 
-var total: Int = 0
-    private set
-
 abstract class Conta(
     var titular: Cliente,
     val numero: Int
 ) {
     var saldo: Double = 0.0
         protected set
+
+    companion object {
+        var total: Int = 0
+            private set
+    }
 
     init {
         println("Criando conta para ${this.titular.nome}")

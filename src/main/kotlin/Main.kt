@@ -1,5 +1,5 @@
-import br.com.alura.bytebank.modelo.total
-import br.com.alura.bytebank.teste.*
+import br.com.alura.bytebank.modelo.Conta
+import br.com.alura.bytebank.teste.testaContasDiferentes
 
 fun main() {
 
@@ -45,9 +45,9 @@ fun main() {
 //    // Testa Funcionários
 //    testaFuncionarios()
 //
-//    // Testa Contas Poupança e Corrente
-//    testaContasDiferentes()
-//    println("Total de contas: $total")
+    // Testa Contas Poupança e Corrente
+    testaContasDiferentes()
+    println("Total de contas: ${Conta.total}")
 //
 //    // Testa classe com construtor default
 //    testaClassesComDiferentesConstrutores()
@@ -55,8 +55,8 @@ fun main() {
 //    // Testando strings do Kotlin e do Java (uso do alias para evitar ambiguidade e uso do FQN)
 //    testaAliasImport()
 
-    // Testando Object Expression (objeto anônimo)
-    testaObjectExpression()
+//    // Testando Object Expression (objeto anônimo)
+//    testaObjectExpression()
 
 
 }
