@@ -1,5 +1,8 @@
 package br.com.alura.bytebank.modelo
 
+var total: Int = 0
+    private set
+
 abstract class Conta(
     var titular: Cliente,
     val numero: Int
@@ -9,6 +12,7 @@ abstract class Conta(
 
     init {
         println("Criando conta para ${this.titular.nome}")
+        total++
     }
 
     constructor(titular: Cliente, numero: Int, saldo: Double) : this(titular, numero) {

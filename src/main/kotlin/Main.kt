@@ -1,3 +1,4 @@
+import br.com.alura.bytebank.modelo.total
 import br.com.alura.bytebank.teste.*
 
 fun main() {
@@ -45,7 +46,8 @@ fun main() {
 //    testaFuncionarios()
 //
 //    // Testa Contas Poupança e Corrente
-//    testaContasDiferentes()
+    testaContasDiferentes()
+    println("Total de contas: $total")
 //
 //    // Testa classe com construtor default
 //    testaClassesComDiferentesConstrutores()
