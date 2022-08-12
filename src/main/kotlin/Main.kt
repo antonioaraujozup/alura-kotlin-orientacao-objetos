@@ -1,12 +1,10 @@
 import br.com.alura.bytebank.modelo.Endereco
-import br.com.alura.bytebank.teste.testaAny
-import br.com.alura.bytebank.teste.testaFuncionarios
-import br.com.alura.bytebank.teste.testeSistemaInterno
+import br.com.alura.bytebank.teste.testaToString
 
 fun main() {
 
 //    // Testa acesso ao Sistema Interno
-    testeSistemaInterno()
+//    testeSistemaInterno()
 //
 //    // Construtores, propriedades e métodos/comportamentos
 //    testaComportamentos()
@@ -70,5 +68,10 @@ fun main() {
 //    val endereco: Any = testaAny(Endereco())
 //    println(endereco)
 
+    // Testa toString() personalizado
+    testaToString()
+
 }
+
+
 
