@@ -1,5 +1,5 @@
-import br.com.alura.bytebank.modelo.Conta
-import br.com.alura.bytebank.teste.testaContasDiferentes
+import br.com.alura.bytebank.modelo.Endereco
+import br.com.alura.bytebank.teste.testaAny
 
 fun main() {
 
@@ -45,9 +45,9 @@ fun main() {
 //    // Testa Funcionários
 //    testaFuncionarios()
 //
-    // Testa Contas Poupança e Corrente
-    testaContasDiferentes()
-    println("Total de contas: ${Conta.total}")
+//    // Testa Contas Poupança e Corrente
+//    testaContasDiferentes()
+//    println("Total de contas: ${Conta.total}")
 //
 //    // Testa classe com construtor default
 //    testaClassesComDiferentesConstrutores()
@@ -57,6 +57,15 @@ fun main() {
 
 //    // Testando Object Expression (objeto anônimo)
 //    testaObjectExpression()
+
+//    // Testando classe Any
+//    testaAny(true)
+//    testaAny(1)
+//    testaAny(1.0)
+//    testaAny(1L)
+//    testaAny("Teste")
+//    testaAny(Endereco())
+
 
 
 }
