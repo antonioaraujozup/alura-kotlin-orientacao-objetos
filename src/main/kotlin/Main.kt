@@ -1,5 +1,4 @@
-import br.com.alura.bytebank.modelo.Endereco
-import br.com.alura.bytebank.teste.testaToString
+import br.com.alura.bytebank.teste.testaEqualsHashCode
 
 fun main() {
 
@@ -68,8 +67,11 @@ fun main() {
 //    val endereco: Any = testaAny(Endereco())
 //    println(endereco)
 
-    // Testa toString() personalizado
-    testaToString()
+//    // Testa toString() personalizado
+//    testaToString()
+
+//    // Testa equals e hashCode
+//    testaEqualsHashCode()
 
 }
 
