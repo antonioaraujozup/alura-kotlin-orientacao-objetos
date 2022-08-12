@@ -80,11 +80,30 @@ fun testaFuncionarios() {
     // Calculando total de bonificação dos funcionários
     val calculadoraBonificacao = CalculadoraBonificacao()
 
+    println("Registra")
     calculadoraBonificacao.registra(antonio)
     calculadoraBonificacao.registra(eloy)
     calculadoraBonificacao.registra(mai)
     calculadoraBonificacao.registra(rodolfo)
     calculadoraBonificacao.registra(joao)
+
+    println("Total de bonificação: ${calculadoraBonificacao.total}")
+
+    println("Registra (Any e Cast)")
+    calculadoraBonificacao.registraComAnyECast(antonio)
+    calculadoraBonificacao.registraComAnyECast(eloy)
+    calculadoraBonificacao.registraComAnyECast(mai)
+    calculadoraBonificacao.registraComAnyECast(rodolfo)
+    calculadoraBonificacao.registraComAnyECast(joao)
+
+    println("Total de bonificação: ${calculadoraBonificacao.total}")
+
+    println("Registra (Any e Smart Cast)")
+    calculadoraBonificacao.registraComAnyESmartCast(antonio)
+    calculadoraBonificacao.registraComAnyESmartCast(eloy)
+    calculadoraBonificacao.registraComAnyESmartCast(mai)
+    calculadoraBonificacao.registraComAnyESmartCast(rodolfo)
+    calculadoraBonificacao.registraComAnyESmartCast(joao)
 
     println("Total de bonificação: ${calculadoraBonificacao.total}")
 }

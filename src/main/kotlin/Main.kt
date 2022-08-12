@@ -1,5 +1,6 @@
 import br.com.alura.bytebank.modelo.Endereco
 import br.com.alura.bytebank.teste.testaAny
+import br.com.alura.bytebank.teste.testaFuncionarios
 
 fun main() {
 
@@ -43,7 +44,7 @@ fun main() {
 //    testaDoWhile()
 //
 //    // Testa Funcionários
-//    testaFuncionarios()
+    testaFuncionarios()
 //
 //    // Testa Contas Poupança e Corrente
 //    testaContasDiferentes()
