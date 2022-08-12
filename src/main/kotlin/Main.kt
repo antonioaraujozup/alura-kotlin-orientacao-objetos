@@ -59,12 +59,14 @@ fun main() {
 //    testaObjectExpression()
 
 //    // Testando classe Any
+//    testaAny(Any())
 //    testaAny(true)
 //    testaAny(1)
 //    testaAny(1.0)
 //    testaAny(1L)
 //    testaAny("Teste")
-//    testaAny(Endereco())
+//    val endereco: Any = testaAny(Endereco())
+//    println(endereco)
 
 
 
