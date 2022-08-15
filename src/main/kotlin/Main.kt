@@ -1,4 +1,5 @@
 import br.com.alura.bytebank.teste.testaClasseNumber
+import br.com.alura.bytebank.teste.testaClasseString
 import br.com.alura.bytebank.teste.testaEqualsHashCode
 
 fun main() {
@@ -76,6 +77,9 @@ fun main() {
 
 //    // Testa classe Number
 //    testaClasseNumber()
+
+    // Testa classe String
+    testaClasseString()
 
 }
 
